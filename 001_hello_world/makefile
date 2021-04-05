@@ -21,7 +21,7 @@ $(BINDIR)/$(TARGET): $(OBJECTS)
 	@echo "Linking complete!"
 
 $(OBJECTS): $(OBJ)%.o : %.cpp
-	@$(CC) $(CFLAGS) -c $< -o $@ ${INC}  $(mysql_config --cflags)
+	@$(CC) $(CFLAGS) -c $< -o $@ ${INC} 
 	@echo "[CC] "$<
 
 all:$(BINDIR)/$(TARGET)
