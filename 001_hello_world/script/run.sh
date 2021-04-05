@@ -1,1 +1,2 @@
-./helloworld.o
+export app=$(basename "$PWD")
+./out/$app.o

@@ -1,2 +1,3 @@
- ps  -A | grep servergg3.o
- ps  -A | grep -c servergg3.o
+export app=$(basename "$PWD")
+ps  -A | grep $app.o
+ps  -A | grep -c $app.o

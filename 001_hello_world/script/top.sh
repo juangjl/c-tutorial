@@ -1,2 +1,3 @@
-#top -p `pgrep -d "," servergg3`
-top -p $(pgrep servergg3 | head -20 | tr "\\n" "," | sed 's/,$//')
+export app=$(basename "$PWD")
+echo $app
+top -p $(pgrep $app | head -20 | tr "\\n" "," | sed 's/,$//')

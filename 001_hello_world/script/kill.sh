@@ -1,2 +1,3 @@
-pkill -f helloworld.o
+export app=$(basename "$PWD")
+pkill -f $app.o
 rm leave
