@@ -1,7 +1,7 @@
 /**
  * @file Global.h
  *
- *  Global.h controls the features enabled or disabled
+ *  Global definition 
  *
  * @version $Revision$
  * @author JLJuang <juangjl2009@gmail.com>
