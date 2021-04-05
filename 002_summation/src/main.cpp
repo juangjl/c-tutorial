@@ -44,7 +44,7 @@ int main( int argc, char *argv[] )
   {
     iSum = iSum + i;
   }
-  printf("\tAdd %d to %d equals %d\r\n", iStart, iEnd, iSum);
+  printf("\t The Sumation from %d to %d equals %d\r\n", iStart, iEnd, iSum);
 
 
   return 0;
