@@ -7,7 +7,7 @@ SRC=./src
 OUT=./out
 
 CFLAGS=  -O3 -ansi -g -Wno-unused-result
-LFLAGS=   -lpthread -lz -lm  -ldl
+LFLAGS=  -lpthread -lz -lm  -ldl
 
 INC=  -I./inc 
 
