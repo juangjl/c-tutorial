@@ -30,9 +30,21 @@ void MainInit()
 ///-------------------------------------------------///
 int main( int argc, char *argv[] )
 {
-  MainInit();
-  
+  const JINT iStart = 1;
+  const JINT iEnd   = 100;  
+  JINT i    = 0;
+  JINT iSum = 0;
 
+  MainInit();
+
+  ///--------------------------///
+  /// Main function
+  ///--------------------------///
+  for(i = iStart; i <= iEnd; i = i + 1)
+  {
+    iSum = iSum + i;
+  }
+  printf("\tAdd %d to %d equals %d\r\n", iStart, iEnd, iSum);
 
 
   return 0;
