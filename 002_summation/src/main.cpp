@@ -13,11 +13,17 @@
 ///------------------------------------------///
 #include "Global.h"
 
+///------------------------------------------///
+///  Macro area
+///------------------------------------------///
+#define SUMMATION_START_VALUE   (1)
+#define SUMMATION_STEPS         (100)
+
 ///-------------------------------------------------///
 /// @Function: Main Init
 /// @Brief: Main Init
 ///-------------------------------------------------///
-void MainInit()
+void MainInit(void)
 {  
   printf("\r\n");
 	printf("\tSummation(V1.0)\r\n");
@@ -30,22 +36,32 @@ void MainInit()
 ///-------------------------------------------------///
 int main( int argc, char *argv[] )
 {
-  const JINT iStart = 1;
-  const JINT iEnd   = 100;  
-  JINT i    = 0;
-  JINT iSum = 0;
+  JINT iStart = SUMMATION_START_VALUE;
+  JINT iCount = SUMMATION_STEPS;
+
+  JINT i      = 0;
+  JINT iSum   = 0;
+  JINT iVal   = 0;
+
+  JFLOAT fAvg = 0.0;
 
   MainInit();
 
   ///--------------------------///
-  /// Main function
+  /// Summation
   ///--------------------------///
-  for(i = iStart; i <= iEnd; i = i + 1)
+  for(i = 0 ; i < iCount; i = i + 1)
   {
-    iSum = iSum + i;
+    iVal = (i + iStart);
+    iSum = iSum + iVal;
   }
-  printf("\t The Sumation from %d to %d equals %d\r\n", iStart, iEnd, iSum);
+  printf("\tThe Sumation from %d to %d equals %d\r\n", iStart, iVal,  iSum);
 
+  ///--------------------------///
+  /// Average
+  ///--------------------------///
+  fAvg = (JFLOAT)(iSum) / (JFLOAT) (iCount);
+  printf("\tAverage =  %0.1f\r\n", fAvg);
 
   return 0;
 }

@@ -1,7 +1,7 @@
 /**
  * @file JType.h
  *
- *  Type defininition
+ *  Type definiition
  *
  *
  * @version $Revision$

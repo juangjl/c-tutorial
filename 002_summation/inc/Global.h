@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/// type definition
 #include "JType.h"
 
 #endif  ///< for #ifndef __GLOBAL_H__
