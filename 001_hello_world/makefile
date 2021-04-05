@@ -17,7 +17,7 @@ OBJECTS  := $(SOURCES:%.cpp=%.o)
 $(BINDIR)/$(TARGET): $(OBJECTS)
 	@$(LL) $(OBJECTS) $(LFLAGS) -o ${TARGET}.o
 	@mv ${SRC}/*.o ${OUT}
-	@cp ${TARGET}.o ${OUT}
+	@mv ${TARGET}.o ${OUT}
 	@echo "Linking complete!"
 
 $(OBJECTS): $(OBJ)%.o : %.cpp
