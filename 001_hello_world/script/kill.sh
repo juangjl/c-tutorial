@@ -1,4 +1,2 @@
-touch leave
-sleep 10
-pkill -f servergg3.o
+pkill -f helloworld.o
 rm leave

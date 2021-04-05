@@ -1,4 +1,4 @@
-TARGET   = helloworld
+TARGET   = $(CURDIR)
 
 CC=g++
 LL=g++
